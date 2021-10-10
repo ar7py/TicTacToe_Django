@@ -1,0 +1,20 @@
+{% extends 'tttgame/base.html' %}
+{% block content %}
+<div class="wrapper">
+	<h1>WelCome To Tic Tac Toe Game</h1>
+	<form method="POST">
+		<div class="form-control">
+			<label for="room">RoomId</label>
+			<input type="text" name="room_code" id="room" >
+		</div>
+		<div class="form-control">
+			<label for="character-choice">Your Choice</label>
+			<select for="character-choice" name="character-choice">
+				<option value="X">X</option>
+				<option value="O">O</option>
+			</select>
+		</div>
+		<input type="submit" class="button" value="StartGame">
+	</form>
+</div>
+{% endblock content %}
